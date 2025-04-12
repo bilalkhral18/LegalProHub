@@ -1,0 +1,92 @@
+.Questions {
+  width: 92vw;
+  height: 65vh;
+  border: none;
+  margin: 0 auto;
+  box-shadow: 5px 5px 30px rgb(202, 192, 234);
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.Questions h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+.Question {
+  margin-bottom: 3rem;
+  width: 50%;
+}
+.Question h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.Question p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.Containquestions {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .Questions {
+    width: 95vw;
+    height: auto;
+  }
+  .Questions h3 {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .Containquestions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Question {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .Question h5 {
+    font-size: 1.3rem;
+  }
+  .Question p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Questions {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1px;
+  }
+
+  .Questions h3 {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .Containquestions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Question {
+    width: 95%;
+    margin-bottom: 1.5rem;
+  }
+
+  .Question h5 {
+    font-size: 1.2rem;
+  }
+
+  .Question p {
+    font-size: 1rem;
+  }
+}

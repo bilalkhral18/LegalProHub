@@ -1,0 +1,364 @@
+.Loginform {
+  height: 78vh;
+  width: 25vw;
+  position: fixed;
+  top: 8rem;
+  right: 45rem;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid rgba(203, 189, 189, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 71, 0.15);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.loginHeading {
+  height: 38%;
+  background: linear-gradient(135deg, #000071, #2fafd9);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginHeading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 20%
+    );
+  z-index: 0;
+}
+
+.loginHeading h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loginHeading p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.logincredentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 62%;
+  padding: 1.5rem 0;
+  background: #fcfcfc;
+}
+
+.logincredentials h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #444444;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.loginTypeButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.loginTypeButton {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  background: #f5f8fa;
+  color: #555;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e8ed;
+}
+
+.loginTypeButton.active {
+  background: linear-gradient(135deg, #000071, #2fafd9);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 113, 0.2);
+}
+
+.loginTypeButton:hover {
+  background: #e1e8ed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.loginTypeButton.active:hover {
+  background: linear-gradient(135deg, #000060, #1e96bd);
+  box-shadow: 0 4px 8px rgba(0, 0, 113, 0.3);
+}
+
+@media (max-width: 767px) {
+  .loginTypeButtons {
+    width: 85%;
+  }
+
+  .loginTypeButton {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+.logincredentials h1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #2fafd9, #000071);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.InputContainer {
+  width: 80%;
+  background-color: #f5f8fa;
+  border: 1px solid #e1e8ed;
+  border-radius: 30px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.InputContainer:focus-within {
+  border-color: #2fafd9;
+  box-shadow: 0 0 0 2px rgba(47, 175, 217, 0.2);
+  background-color: #ffffff;
+}
+
+.InputContainer input {
+  border: none;
+  color: #444;
+  background: transparent;
+  display: inline-block;
+  margin-left: 10px;
+  width: 70%;
+  padding: 10px 5px;
+  font-size: 0.95rem;
+}
+
+.InputContainer input::placeholder {
+  color: #aab8c2;
+  font-weight: 300;
+}
+
+.InputContainer input:focus {
+  outline: none;
+}
+
+.EmailIcon {
+  margin-left: 15px;
+  color: #2fafd9;
+  font-size: 1.2rem;
+}
+
+.country-code {
+  margin-left: 15px;
+  color: #444;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.Submitbtn {
+  width: 80%;
+  background: linear-gradient(135deg, #000071, #2fafd9);
+  border: none;
+  border-radius: 30px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 113, 0.2);
+}
+
+.Submitbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 113, 0.3);
+  background: linear-gradient(135deg, #000060, #1e96bd);
+}
+
+.Submitbtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 113, 0.3);
+}
+
+.newaccount {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.newaccount a {
+  text-decoration: none;
+  color: #2fafd9;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.newaccount a:hover {
+  color: #000071;
+}
+
+.newaccount a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000071;
+  transition: width 0.3s ease;
+}
+
+.newaccount a:hover::after {
+  width: 100%;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  width: 80%;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.cancelButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.cancelButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.cancelButton svg {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Loginform {
+    width: 53vw;
+    height: 59vh;
+    right: 14rem;
+    top: 13rem;
+  }
+
+  .loginHeading h1 {
+    font-size: 1.5rem;
+  }
+
+  .loginHeading p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .Loginform {
+    width: 84vw;
+    height: auto;
+    position: fixed;
+    top: 10rem;
+    right: 2rem;
+  }
+
+  .loginHeading {
+    padding: 1.5rem 1rem;
+  }
+
+  .loginHeading h1 {
+    font-size: 1.3rem;
+  }
+
+  .loginHeading p {
+    font-size: 0.85rem;
+  }
+
+  .InputContainer {
+    width: 85%;
+    height: 2.8rem;
+  }
+
+  .Submitbtn {
+    width: 85%;
+    height: 2.8rem;
+    font-size: 0.9rem;
+  }
+
+  .logincredentials {
+    padding: 1rem 0;
+  }
+
+  .logincredentials h1 {
+    font-size: 1.2rem;
+  }
+}

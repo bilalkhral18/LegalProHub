@@ -1,0 +1,237 @@
+.Ceoscontainer {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+.ceo {
+  width: 45%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.ceo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.imgandtext {
+  display: flex;
+  margin-top: 2rem;
+}
+.textcontent {
+  margin-left: 1rem;
+  line-height: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+.textcontent h4 {
+  font-size: 1.5rem;
+}
+.textcontent p {
+  font-size: 1.2rem;
+}
+hr {
+  border: none;
+  border-left: 1px solid #000;
+  height: 18rem;
+  width: 1px; /* Set the width to 1px to make the line visible */
+  margin-top: 5rem;
+}
+
+.connect {
+  width: 95vw;
+  margin: 0 auto;
+  height: 27vh;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 30px rgb(202, 192, 234);
+  margin-top: 1rem;
+}
+.connectheader {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.connectheader h3 {
+  font-size: 2.5rem;
+  font-weight: 450;
+  line-height: 3rem;
+}
+.connectheader p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.buttons {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+.buttons button {
+  border: none;
+  margin-right: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 8rem;
+  background-color: rgb(44, 60, 204);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.buttons button a {
+  text-decoration: none;
+  color: white;
+}
+.buttons button:hover {
+  animation: zoom-hover 0.6s ease-out forwards;
+  background-color: #7f31b4;
+}
+@keyframes zoom-hover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Ceoscontainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .Ceoscontainer p {
+    font-size: 1.2rem;
+  }
+  .ceo {
+    width: 80%;
+    text-align: center;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #000;
+    width: 85%;
+    height: 0px;
+    margin: 2rem auto;
+  }
+
+  .connect {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .connectheader {
+    width: 90%;
+  }
+
+  .buttons {
+    width: 90%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .buttons button {
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
+/* Media query for mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .Ceoscontainer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .ceo {
+    width: 90%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .ceo p {
+    font-size: 1.1rem;
+  }
+
+  .imgandtext {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ceo img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .textcontent {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .textcontent h4 {
+    font-size: 1.3rem;
+  }
+
+  .textcontent p {
+    font-size: 1.1rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #000;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .connect {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .connectheader {
+    width: 100%;
+  }
+
+  .connectheader h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .connectheader p {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .buttons button {
+    width: 90%;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+}

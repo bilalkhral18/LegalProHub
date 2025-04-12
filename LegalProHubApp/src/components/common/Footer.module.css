@@ -1,0 +1,148 @@
+.Footer {
+  margin-top: auto;
+  width: auto;
+  height: 45vh;
+  background-color: #2b2075;
+}
+
+.Footerlinks {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footerlinksanchors {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+.createline {
+  color: rgb(200, 193, 193);
+  opacity: 0.6;
+  width: 85%;
+  margin: 0 auto;
+  height: 1px;
+  border: none;
+  background-color: rgb(200, 193, 193);
+}
+
+.contactlinks {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactanchors {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactanchors a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-left: 1.2rem;
+}
+
+.contactlinks p {
+  color: rgb(165, 171, 227);
+  margin-right: 9%;
+}
+
+/* Media query for tablets (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Footer {
+    height: 30vh !important;
+  }
+
+  .Footerlinks {
+    flex-wrap: wrap;
+    height: 50%;
+    gap: 10px;
+  }
+
+  .Footerlinks a {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .createline {
+    width: 90%;
+  }
+
+  .contactlinks {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contactanchors {
+    width: 15%;
+    justify-content: space-around;
+    margin-left: 4rem;
+  }
+
+  .contactanchors a {
+    font-size: 1rem;
+  }
+
+  .contactlinks p {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+  }
+}
+/* Media query for mobile devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .Footer {
+    height: auto; /* Adjust height dynamically */
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .Footerlinks {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    height: auto;
+  }
+
+  .Footerlinks a {
+    font-size: 0.9rem;
+    margin: 8px 0; /* Adjust spacing */
+  }
+
+  .createline {
+    width: 95%;
+  }
+
+  .contactlinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .contactanchors {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contactanchors a {
+    font-size: 1.5rem; /* Reduce icon size */
+    margin: 0 10px; /* Add spacing */
+  }
+
+  .contactlinks p {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+}

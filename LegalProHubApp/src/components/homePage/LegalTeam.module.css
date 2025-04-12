@@ -1,0 +1,182 @@
+.legalteamcontainer {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background-color: rgb(13, 13, 86);
+  border: none;
+  padding-bottom: 3rem;
+}
+.headingcontainer {
+  min-height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.headingcontainer h2 {
+  font-size: 3.5rem;
+  font-weight: 450;
+  margin-bottom: 1rem;
+}
+.headingcontainer p {
+  font-size: 1.2rem;
+  width: 50%;
+  font-weight: 300;
+}
+.memberscontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.members {
+  width: 27%;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.members:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(14, 38, 132, 0.8), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.overlayText h6 {
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.overlayanchor {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.overlayanchor a {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s;
+}
+.overlayanchor a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .legalteamcontainer {
+    overflow: hidden;
+  }
+  .headingcontainer h2 {
+    font-size: 3rem;
+  }
+
+  .headingcontainer p {
+    font-size: 1.1rem;
+    width: 65%;
+  }
+
+  .members {
+    width: 35%;
+    height: 65vh;
+  }
+}
+/* Media query for mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .legalteamcontainer {
+    overflow: hidden;
+  }
+  .legalteamcontainer {
+    padding-bottom: 2rem;
+  }
+
+  .headingcontainer {
+    padding: 1.5rem;
+  }
+
+  .headingcontainer h2 {
+    font-size: 2rem;
+  }
+
+  .headingcontainer p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .memberscontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .members {
+    width: 50%;
+    height: 60vh;
+  }
+
+  .overlayText {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .overlayText h3 {
+    font-size: 1.4rem;
+  }
+
+  .overlayText h6 {
+    font-size: 0.9rem;
+  }
+
+  .overlayText p {
+    font-size: 0.9rem;
+  }
+
+  .overlayanchor {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.3rem;
+  }
+}

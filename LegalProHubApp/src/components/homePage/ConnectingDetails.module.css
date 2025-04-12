@@ -1,0 +1,182 @@
+.ConnectDetailsContainer {
+  width: auto;
+  overflow: hidden;
+  min-height: auto;
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+.connectheader {
+  width: 50%;
+  height: 35%;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.connectheader h6 {
+  color: rgb(150, 150, 224);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.connectheader h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0.1rem 0;
+}
+.headerparagraph {
+  width: 65%;
+  min-height: 10%;
+}
+
+.connectmain {
+  width: 87%;
+  height: 60%;
+  display: flex;
+  margin-left: 13%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.maincomponents {
+  width: 40%;
+  padding: 1rem;
+}
+.headingcomponent {
+  display: flex;
+}
+.headingcomponent h3 {
+  margin-left: 0.9rem;
+  font-size: 1.5rem;
+}
+.Icon {
+  width: 40px;
+  height: 40px;
+  background-color: #111184;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mainparagraphs {
+  width: 65%;
+  min-height: 10%;
+  text-align: start;
+  margin-left: 4.2rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ConnectDetailsContainer {
+    padding: 2rem;
+    min-height: auto;
+    overflow: hidden;
+    margin-top: 40rem !important;
+  }
+
+  .connectheader {
+    width: 70%;
+  }
+
+  .connectheader h2 {
+    font-size: 2.2rem;
+  }
+
+  .connectmain {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .maincomponents {
+    width: 45%;
+  }
+
+  .headingcomponent {
+    justify-content: left;
+  }
+  .headingcomponent h3 {
+    font-size: 1.4rem;
+  }
+
+  .mainparagraphs {
+    width: 80%;
+    min-height: 30%;
+  }
+}
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .ConnectDetailsContainer {
+    width: 100%;
+    min-height: auto;
+    margin-top: 35rem !important;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .connectheader {
+    width: 90%;
+    text-align: center;
+  }
+
+  .connectheader h6 {
+    font-size: 1rem;
+  }
+
+  .connectheader h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .headerparagraph {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .connectmain {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .maincomponents {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .headingcomponent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headingcomponent h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .Icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+  }
+
+  .mainparagraphs {
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,131 @@
+.headingcontainer {
+  width: 36vw;
+  height: auto;
+  margin-top: 40rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  text-align: left !important;
+}
+#Hfoursetting {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.headingcontainer p {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.ServicesContainer {
+  height: 63vh;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  box-shadow: 5px 5px 30px rgb(213, 200, 253);
+}
+.Service {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  height: 96%;
+}
+.Service img {
+  height: 90%;
+  width: 21vw;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Service img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.Service h6 {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .headingcontainer {
+    width: 70vw;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 43rem;
+    margin-bottom: 2rem;
+  }
+
+  #Hfoursetting {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .headingcontainer p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+  }
+
+  .ServicesContainer {
+    height: 50vh;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .Service {
+    margin-left: 1.5rem;
+  }
+
+  .Service img {
+    height: 85%;
+    width: 21vw;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .Service h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+  .headingcontainer {
+    width: 80vw;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 40rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #Hfoursetting {
+    font-size: 1.8rem;
+  }
+
+  .headingcontainer p {
+    font-size: 1rem;
+  }
+
+  .ServicesContainer {
+    height: 50vh;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .Service {
+    margin-left: 1.5rem;
+  }
+
+  .Service img {
+    height: 80%;
+    width: 24vw;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .Service h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

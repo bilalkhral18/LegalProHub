@@ -1,0 +1,135 @@
+.Supportteam {
+  width: auto;
+  height: auto;
+  border: none;
+  box-shadow: 5px 5px 30px rgb(202, 192, 234);
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.headingcontainer {
+  min-height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  color: rgb(3, 3, 92);
+  padding: 2rem;
+}
+.headingcontainer h2 {
+  width: 90%;
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.headingcontainer p {
+  font-size: 1.3rem;
+  width: 60%;
+  font-weight: 300;
+}
+.memberscontainer {
+  box-shadow: 5px 5px 30px rgb(202, 192, 234);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.members {
+  width: 20%;
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.members:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.members h6 {
+  font-style: italic;
+  font-weight: 300;
+}
+.members h3 {
+  font-size: 1.4rem;
+}
+.overlayText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(2, 7, 25, 0.8), transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .headingcontainer h2 {
+    font-size: 3rem;
+  }
+
+  .headingcontainer p {
+    font-size: 1.1rem;
+    width: 65%;
+  }
+
+  .members {
+    width: 45%;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headingcontainer {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .headingcontainer h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .headingcontainer p {
+    font-size: 1rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .memberscontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .members {
+    width: 80%;
+    height: 50vh;
+    justify-self: center;
+  }
+
+  .overlayText {
+    padding: 0.8rem;
+  }
+
+  .overlayText h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlayText h6 {
+    font-size: 1rem;
+  }
+}

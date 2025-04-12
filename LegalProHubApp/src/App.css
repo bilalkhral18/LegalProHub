@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import "tailwindcss"; */
+/*colors combination for app    https://colorhunt.co/palette/4635b1b771e5aeea94fffbca */
+html {
+  font-size: 12px;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+
+.App_Container {
+  width: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.Hrstyle {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 10px auto; /* Center horizontally */
+  width: 90%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.Herocontainer {
+  display: flex;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  color: white;
+}
+.ServicesHerosection {
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  background-position: center;
+  width: 100vw;
+}
+.ServicesHerosection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 17, 87, 0.6);
+}
+
+.Herocontent {
+  width: 48%;
+  text-align: center;
+  margin-top: 4rem;
+  z-index: 2;
+}
+.Herocontent h1 {
+  font-size: 4.4rem;
+  font-weight: 500;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+.Herocontent p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.cancelIcon {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Herocontainer {
+    min-height: 50vh;
+  }
+
+  .Herocontent {
+    width: 60%;
+  }
+
+  .Herocontent h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .Herocontent p {
+    font-size: 1.2rem;
+  }
+}
+/* ✅ Responsive for Mobile Devices */
+@media (max-width: 768px) {
+  .ServicesHerosection {
+    width: auto;
+    background-size: cover;
+  }
+
+  .ServicesHerosection::before {
+    height: 100%;
+  }
+
+  .Herocontainer {
+    flex-direction: column;
+    min-height: 50vh;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .Herocontent {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .Herocontent h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .Herocontent p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}

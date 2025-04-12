@@ -1,0 +1,492 @@
+/* GENERAL RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #eef2f3, #d7e1ec);
+}
+
+/* CONTAINER */
+.adminContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* HEADER */
+.headerContainer {
+  height: 12vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.leftContainer img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.leftContainer p {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.adminProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adminProfile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+.adminDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminName {
+  font-weight: bold;
+  color: white;
+  margin: 0%;
+}
+
+.adminRole {
+  font-size: 0.9rem;
+  color: #f3f3f3;
+  margin: 0%;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 12vh;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebarBtn {
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  color: rgb(155, 145, 145);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: rgba(165, 96, 176, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2),
+    -2px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarBtn:hover,
+.sidebar .active {
+  background: rgba(255, 255, 255, 0.3);
+  color: #4facfe;
+  font-weight: bold;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.4);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+/* MAIN CONTENT */
+.mainContent {
+  margin-left: 250px;
+  margin-top: 0.5vh;
+  padding: 2rem;
+  width: calc(100vw - 250px);
+  height: calc(100vh - 12vh); /* Ensures it does not overlap the header */
+  overflow-y: auto; /* Enables scrolling */
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD CONTAINER */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* LAWYER CARD */
+.lawyerCard {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.lawyerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lawyerCard img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4facfe;
+  margin-bottom: 10px;
+}
+
+.lawyerCard h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.lawyerCard p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.starIcon {
+  margin-right: 5px;
+  color: #ffcc00;
+}
+/* User Id card and lawyer license PHoto */
+/* DOCUMENT PHOTOS */
+.idCard {
+  width: 100% !important;
+  /* border-radius: 4px; */
+  /* height: auto; */
+}
+.license {
+  width: 20rem !important;
+  height: 10rem !important;
+  border-radius: 8px !important;
+  border: 1px solid black !important;
+}
+.documentImage {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.documentPhoto {
+  width: 90%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4facfe;
+  margin-top: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.documentPhoto:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* CLIENT CARD */
+.clientCard {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.clientCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.clientCard h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.clientCard p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 1.5rem;
+  }
+
+  .leftContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium tablets */
+@media (max-width: 992px) {
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .mainContent {
+    margin-left: 200px;
+    width: calc(100vw - 200px);
+  }
+
+  .sidebarBtn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .license {
+    width: 16rem !important;
+    height: 8rem !important;
+  }
+}
+
+/* Small tablets */
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 0 1rem;
+  }
+
+  .leftContainer p {
+    font-size: 1.2rem;
+  }
+
+  .adminProfile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .adminName {
+    font-size: 0.9rem;
+  }
+
+  .adminRole {
+    font-size: 0.8rem;
+  }
+
+  .sidebar {
+    width: 180px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .mainContent {
+    margin-left: 180px;
+    width: calc(100vw - 180px);
+    padding: 1rem;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .lawyerCard,
+  .clientCard {
+    padding: 15px;
+  }
+
+  .license {
+    width: 14rem !important;
+    height: 7rem !important;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  /* Header adjustments */
+  .headerContainer {
+    height: 10vh;
+    padding: 0 0.8rem;
+  }
+
+  .leftContainer img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .leftContainer p {
+    font-size: 1rem;
+  }
+
+  .adminProfile img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .adminDetails {
+    display: none; /* Hide admin details on mobile */
+  }
+
+  /* Convert sidebar to bottom navigation */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+  }
+
+  .sidebarBtn {
+    width: auto;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.7rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  /* Main content adjustments */
+  .mainContent {
+    margin-left: 0;
+    margin-top: 10vh;
+    margin-bottom: 60px; /* Space for bottom navigation */
+    width: 100%;
+    height: calc(100vh - 10vh - 60px);
+    padding: 0.8rem;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 12px;
+  }
+
+  /* Card adjustments */
+  .lawyerCard,
+  .clientCard {
+    padding: 12px;
+  }
+
+  .lawyerCard img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .lawyerCard h3,
+  .clientCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .license {
+    width: 100% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .documentPhoto {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  .headerContainer {
+    height: 8vh;
+  }
+
+  .leftContainer img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .leftContainer p {
+    font-size: 0.9rem;
+  }
+
+  .mainContent {
+    margin-top: 8vh;
+    height: calc(100vh - 8vh - 50px);
+    padding: 0.5rem;
+  }
+
+  .sidebarBtn {
+    padding: 6px;
+    font-size: 0.6rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+}

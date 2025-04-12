@@ -1,0 +1,116 @@
+.VisitItems {
+  width: 92vw;
+  height: 55vh;
+  margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.Officedetails {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  height: 100%;
+  justify-content: center;
+}
+.Officedetails h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.Officedetails p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.addressEmail {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(2, 2, 65);
+  cursor: pointer;
+}
+.setup {
+  margin-left: 0.5rem;
+}
+.iconSetting {
+  color: darkblue;
+}
+
+/* Tablets and iPads (Portrait) */
+@media screen and (max-width: 1024px) {
+  .VisitItems {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .Officedetails {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .Officedetails h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Officedetails p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .addressEmail {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .VisitItems {
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .Officedetails {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .Officedetails h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .Officedetails p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .addressEmail {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 0.5rem;
+  }
+
+  .setup {
+    margin-left: 0;
+  }
+
+  .iconSetting {
+    font-size: 1.5rem;
+  }
+}

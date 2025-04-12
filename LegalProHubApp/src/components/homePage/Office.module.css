@@ -1,0 +1,120 @@
+.Offices {
+  width: auto;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.headercontainer {
+  width: 30%;
+  height: 100%;
+}
+.headercontainer h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.headercontainer p {
+  font-size: 1.2rem;
+  font-weight: 250;
+  margin-top: 1rem;
+}
+.OfficesContainer {
+  margin-left: 3rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.2rem;
+  margin-bottom: 2rem;
+}
+.Office {
+  border: none;
+  border-radius: 15px;
+  line-height: 2.3rem;
+  background-color: rgb(232 240 248);
+  width: 45%;
+  height: 40%;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+.Office h5 {
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+.Office p {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .Offices {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .headercontainer {
+    width: 90%;
+    text-align: center;
+  }
+
+  .OfficesContainer {
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .Office {
+    width: 55%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+/* Media query for mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .Offices {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .headercontainer {
+    width: 100%;
+  }
+
+  .headercontainer h4 {
+    font-size: 2rem;
+  }
+
+  .headercontainer p {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+  }
+
+  .OfficesContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .Office {
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .Office h5 {
+    font-size: 1.2rem;
+  }
+
+  .Office p {
+    font-size: 1rem;
+  }
+}

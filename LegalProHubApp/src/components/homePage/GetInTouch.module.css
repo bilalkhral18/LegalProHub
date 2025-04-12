@@ -1,0 +1,138 @@
+.GetInTouch {
+  width: auto;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.headercontainer {
+  width: 30%;
+  height: 100%;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.headercontainer p {
+  font-size: 1.2rem;
+  font-weight: 250;
+  margin-top: 1rem;
+}
+.componentscontainer {
+  margin-left: 3rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.2rem;
+  margin-bottom: 2rem;
+}
+.components {
+  border: none;
+  border-radius: 15px;
+  line-height: 2.3rem;
+  background-color: rgb(232 240 248);
+  width: 45%;
+  height: 40%;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+.components a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.components h5 {
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+.components p {
+  cursor: pointer;
+}
+/* .Hrstyle {
+  border: none;
+  height: 3px;
+  background-color: #333;
+  margin: 20px 0;
+  width: 80%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+@media screen and (max-width: 1024px) {
+  .GetInTouch {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .headercontainer {
+    width: 90%;
+    text-align: center;
+  }
+
+  .componentscontainer {
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .components {
+    width: 55%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+/* Media query for mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .GetInTouch {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .headercontainer {
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .headercontainer p {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+  }
+
+  .componentscontainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .components {
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .components h5 {
+    font-size: 1.2rem;
+  }
+
+  .components a {
+    font-size: 1rem;
+  }
+
+  .components p {
+    font-size: 1rem;
+  }
+}

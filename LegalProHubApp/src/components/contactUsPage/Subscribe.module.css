@@ -1,0 +1,95 @@
+.Subscribe {
+  width: auto;
+  height: 47vh;
+  background-color: rgb(4, 4, 150);
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+.btnscontainer {
+  display: flex;
+  column-gap: 2rem;
+}
+.btnstyling {
+  text-align: center;
+  background-color: white;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  width: 15rem;
+  cursor: pointer;
+}
+.btnstyling a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+@media screen and (max-width: 1024px) {
+  .content {
+    width: 70%;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .btnscontainer {
+    flex-direction: column;
+    row-gap: 0.2rem;
+    align-items: center;
+  }
+
+  .btnstyling {
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Subscribe {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btnscontainer {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .btnstyling {
+    width: 100%;
+    max-width: 10rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
